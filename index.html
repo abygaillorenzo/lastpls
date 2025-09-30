@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Let Us Pray for World Peace</title>
+
+  <!-- SEO & Social -->
+  <meta name="description" content="Join us in praying and supporting children worldwide. Donate to bring peace, love, and hope."/>
+  <meta property="og:title" content="Let Us Pray for World Peace"/>
+  <meta property="og:description" content="Let us pray for a world of peace, where nations live in harmony and children grow without fear. A world filled with love, compassion, and kindness, where hope becomes the guiding light for every soul. Together, through faith and unity, we can build a future where peace is the universal language of humanity."/>
+  <meta property="og:image" content="images/19.jpg"/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <img src="images/logo.jpeg" alt="WorldPeace Logo" class="brand-logo">
+      <h1>WorldPeace</h1>
+    </a>
+
+    <nav class="top-nav">
+  <button class="hamburger" id="hamburger" aria-controls="mobileMenu" aria-expanded="false">☰ Menu</button>
+  <button class="btn primary" style="width:fit-content" id="donateOpenMobile">Donate</button>
+  <div id="google_translate_element"></div> <!-- moved inside nav -->
+</nav>
+
+  </div>
+  <div class="translate-container">
+    <div id="google_translate_element"></div>
+  </div>
+</header>
+
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="images/19.jpg" alt="World Peace Background">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <span class="eyebrow">For Every Child 🌍</span>
+    <h2>Let us pray for the world peace and a world filled with love and hope</h2>
+    <div class="hero-actions">
+      <button class="btn primary" id="donateOpen">Donate Now</button>
+      <a href="#mission" class="btn secondary">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🌟 Mission & Vision -->
+<section class="mission-vision" id="mission">
+  <h2>🌟 Our Mission & Vision</h2>
+  <div class="mv-container">
+    <div class="mv-box">
+      <h3>Mission</h3>
+      <p>A world where every child grows in peace, safety, and dignity—nurtured with love, protected from harm, and given the chance to thrive.</p>
+    </div>
+    <div class="mv-box">
+      <h3>Vision</h3>
+      <p>“Let’s Pray for Children” exists to unite people in faith, generosity, and action—raising vital funds and lifting heartfelt prayers to support vulnerable children.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9-Grid Gallery -->
+<section class="grid-container">
+  <div class="grid-item"><img src="images/22.webp" alt="Unity" loading="lazy"><p>🙏 Tiny voices rise in prayer louder than the sound of war.</p></div>
+  <div class="grid-item"><img src="images/20.jpg" alt="Compassion" loading="lazy"><p>💔 Children with broken toys, yet unbroken faith in God.</p></div>
+  <div class="grid-item"><img src="images/header.webp" alt="Hope" loading="lazy"><p>🕊️ Peace blooms in the faith of children who praise God endlessly.</p></div>
+  <div class="grid-item"><img src="images/18.jpg" alt="Children safe" loading="lazy"><p>🕌 Faith is the shelter of children, and God is their protector.</p></div>
+  <div class="grid-item"><img src="images/5.jpg" alt="Unity across nations" loading="lazy"><p>🎶 Unity across nations fosters true peace.</p></div>
+  <div class="grid-item"><img src="images/6.jpg" alt="Charity smiles" loading="lazy"><p>❤️ Charity brings smiles and healing to the world.</p></div>
+  <div class="grid-item"><img src="images/a.jpeg" alt="Prayers" loading="lazy"><p>🙏 Prayers give us strength and faith in peace.</p></div>
+  <div class="grid-item"><img src="images/images (1).jpeg" alt="Dove" loading="lazy"><p>🕊️ The dove symbolizes purity, peace, and hope.</p></div>
+  <div class="grid-item"><img src="images/images.jpeg" alt="Helping hands" loading="lazy"><p>🤝 Helping hands bring comfort to those in need.</p></div>
+</section>
+
+<section class="donors-section" id="donors">
+  <h2>🌟 Our Amazing Donors</h2>
+  <div class="donors-wrapper">
+    <div class="donor-feed-box">
+      <div id="donor-feed-alt" class="donor-feed-alt"></div>
+    </div>
+
+    <div class="donor-stats">
+      <div>Total Donors: <span id="total-donors"></span></div>
+      <div>Total Raised: $<span id="total-raised"></span></div>
+      <div>Progress: <span id="progress-percent"></span></div>
+    </div>
+  </div>
+</section>
+
+<form id="simulate-donor-form" class="donor-form">
+  <input type="text" id="sim-name" placeholder="Name e.g. Jane D." required />
+  <input type="number" id="sim-amount" placeholder="Amount (USD)" required />
+  <input type="text" id="sim-message" placeholder="Message (optional)" />
+  <button type="submit" class="btn primary">Add Donation</button>
+</form>
+
+<!-- Fundraising Goal -->
+<section class="fund-info" id="goal">
+  <h2>🎯 Our Goal</h2>
+  <p><b>Target:</b> $3,000,000</p>
+  <p><b>Purpose:</b> To support children affected by conflict and build a peaceful future.</p>
+  <p><b>Fund Organization:</b> World Peace Foundation</p>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar" data-value="0">Loading...</div>
+  </div>
+</section>
+
+<!-- Payment Methods -->
+<section class="payment-section" id="payment">
+  <h2>💖 Choose Your Donation Method</h2>
+  <p>Select your preferred payment channel below.</p>
+  <div class="payment-options">
+    <div class="payment-card">
+      <h3>💳 PayPal / Credit Card</h3>
+      <p>Scan QR code to donate directly with PayPal.</p>
+      <img src="images/paypalqr.png" alt="PayPal QR" class="qr-code">
+      <a href="https://www.paypal.com/ncp/payment/JSPHXG43C8MRW" target="_blank" class="btn paypal-btn" id="paypal-direct-link">Donate via PayPal</a>
+    </div>
+
+    <div class="payment-card">
+      <h3>🪙 USDT (Crypto)</h3>
+      <p>Donate with stablecoin (TRC20/ERC20).</p>
+      <img src="images/polygon.jpeg" alt="USDT QR" class="qr-code">
+      <button class="btn copy-btn" data-wallet="0x7f24b6B01Ed5e1BD57CA0E7956AFBFbDFE2E0edF">Copy USDT Wallet</button>
+    </div>
+  </div>
+</section>
+
+<!-- Toast Notification -->
+<div id="paypal-toast" class="toast">Redirecting to PayPal...</div>
+
+<!-- 📦 Supply Distribution -->
+<section class="distribution" id="supplies">
+  <h2>📦 Supply Distribution Updates</h2>
+  <p>Here’s how your donations are making a difference in the lives of children and families.</p>
+  <div class="grid-container" id="supply-grid"></div>
+</section>
+
+<!-- 💬 Share Your Thoughts -->
+<section class="thoughts-section" id="thoughts">
+  <h2>💬 Share Your Thoughts</h2>
+  <p>Write your message of peace, hope, or prayer below 🌍</p>
+  <form id="thoughts-form" class="thoughts-form">
+    <textarea id="thought-message" placeholder="Type your thoughts here..." required></textarea>
+    <button type="submit" class="btn primary">Submit</button>
+  </form>
+  <div id="thoughts-feed" class="thoughts-feed"></div>
+</section>
+
+<!-- Footer -->
+<footer>
+ © 2022 LET THEM SURVIVE IN THE NAME OF GOD — WorldPeace. All rights reserved.
+</footer>
+
+<!-- Scripts -->
+<script src="script.js" defer></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en', includedLanguages: 'en,fr,es,de,it,ar,zh-CN,ja,ko,ru,fa,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE},
+      'google_translate_element'
+    );
+  }
+</script>
+<script defer src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
